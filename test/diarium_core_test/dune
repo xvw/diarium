@@ -1,0 +1,3 @@
+(test
+ (name diarium_core_test)
+ (libraries alcotest diarium_core))

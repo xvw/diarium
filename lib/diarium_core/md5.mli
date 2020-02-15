@@ -9,3 +9,9 @@ val from_string : string -> t
 val to_string : t -> string
 (** Represent the MD5 as a string. Be carreful, the function does not un-hash
     the string, it export the hashed string as string *)
+
+val pp : Format.formatter -> t -> unit
+(** Pretty printer *)
+
+val equal : t -> t -> bool
+(** Structural equality *)

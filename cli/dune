@@ -1,4 +1,4 @@
 (executable
  (name diarium)
  (promote (until-clean) (into ../))
- (libraries cmdliner diarium_core))
+ (libraries cmdliner diarium_core diarium_unix))

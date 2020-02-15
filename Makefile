@@ -18,11 +18,12 @@ utop:
 	dune utop
 
 # Development mode
-.PHONY: setup
+.PHONY: setup vendor
 
 setup: vendor
 	opam install .
 
 vendor:
 	mkdir -p vendor
+	# Should be removed when preface'll be public
 	git clone git@github.com:xvw/preface.git vendor

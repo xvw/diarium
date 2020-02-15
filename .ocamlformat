@@ -1,4 +1,4 @@
-version = 0.12
+version = 0.13.0
 margin = 80
 max-indent = 68
 
@@ -26,7 +26,7 @@ disambiguate-non-breaking-match = true
 
 doc-comments = after
 doc-comments-padding = 2
-doc-comments-tag-only = auto
+doc-comments-tag-only = default
 dock-collection-brackets = true
 
 escape-chars = preserve

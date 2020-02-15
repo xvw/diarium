@@ -1,7 +1,9 @@
-.PHONY: all build test clean utop
+.PHONY: all build test clean utop cli
 
-all:
-	dune build src/diarium.exe
+all: cli
+
+cli:
+	dune build cli/diarium.exe
 
 build:
 	dune build

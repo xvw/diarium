@@ -1,0 +1,22 @@
+opam-version: "2.0"
+synopsis: "A timetracker"
+version: "dev"
+maintainer: "xvw"
+authors: ["xvw"]
+homepage: "https://github.com/xvw/diarium"
+bug-reports: "https://github.com/xvw/diarium/issues"
+dev-repo: "git://github.com/xvw/diarium.git"
+license: "MIT"
+
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "build" "@doc" "-p" name ] {with-doc}
+  ["dune" "runtest" "-p" name] {with-test}
+]
+
+depends: [
+  "dune" { >= "1.11"}
+  "ocaml" { >= "4.08.0" }
+  "alcotest" {with-test}
+  "cmdliner"
+]
